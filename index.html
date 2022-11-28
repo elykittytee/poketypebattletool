@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Fan-made Pokemon battle tool that assists with displaying type effectiveness.">
+    <meta name="keywords" content="Pokemon, battle, vgc, vgc doubles, competitive pokemon, Sword and Shield, scarlet, violet">
+    <meta author="Eleanor T., copyright 2022">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="pokestyle.css" rel="stylesheet" type="text/css" />
+
+    <title>Poke-Type Battle Tool</title>
+  </head>
+  <body id="attacking">
+    <div id="stuff" class="container-md mt-5">
+      <div class="container-sm text-left px-1">
+        <h1 class="pt-3">PokeType Battle Tool</h1>
+        <hr>
+        <!-- <p><a href="defendtype.html">Go here</a> to choose the <strong class="text-danger">defending</strong> type instead</p>-->
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+                <a class="nav-link active nav-red-500" aria-current="page" href="#">Attacking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="defendtype.html">Defending</a>
+            </li>
+        </ul>
+        <h3 class="text-center my-2">Choose the ATTACKING Type</h3>
+        
+      </div>
+      <hr>
+      <div class="container-sm text-center">
+        <div class="row">
+          <div class="col">
+            <div class="btn-group" role="group" aria-label="poketype button outline">
+
+              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="norm" onClick="atkNorm()">
+                <i class="fa-solid fa-circle-dot"></i><br> Normal
+              </button>
+              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="fire" onClick="atkFire()">
+                <i class="fa-solid fa-fire-flame-curved"></i><br>Fire
+              </button>
+
+              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="water" onClick="atkWater()">
+                <i class="fa-solid fa-droplet"></i><br>Water
+              </button>
+
+              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="grass" onClick="atkGrass()">
+                <i class="fa-solid fa-leaf"></i><br>Grass
+              </button>
+
+              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="elec" onClick="atkElec()">
+                <i class="fa-solid fa-bolt-lightning"></i><br>Electric
+              </button>
+
+              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="ice" onClick="atkIce()">
+                <i class="fa-solid fa-snowflake"></i><br>Ice
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-sm text-center">
+        <div class="row">
+          <div class="col">
+            <div class="btn-group" role="group" aria-label="poketype button outline">
+
+              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="fight" onClick="atkFight()">
+                <i class="fa-solid fa-hand-back-fist"></i><br>Fighting
+              </button>
+              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="pois" onClick="atkPois()">
+                <i class="fa-solid fa-skull-crossbones"></i><br>Poison
+              </button>
+
+              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="grnd" onClick="atkGrnd()">
+                <i class="fa-solid fa-mountain"></i><br>Ground
+              </button>
+
+              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="fly" onClick="atkFly()">
+                <i class="fa-solid fa-feather-pointed"></i><br>Flying
+              </button>
+
+              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="psych" onClick="atkPsych()">
+                <i class="fa-solid fa-brain"></i><br>Psychic
+              </button>
+
+              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="bug" onClick="atkBug()">
+                <i class="fa-solid fa-bug"></i><br>Bug
+              </button>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-sm text-center">
+        <div class="row">
+          <div class="col">
+            <div class="btn-group" role="group" aria-label="poketype button outline">
+
+              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="rck" onClick="atkRck()">
+                <i class="fa-solid fa-gem"></i><br>Rock
+              </button>
+              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="ghst" onClick="atkGhst()">
+                <i class="fa-solid fa-ghost"></i><br>Ghost
+              </button>
+
+              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="drag" onClick="atkDrag()">
+                <i class="fa-solid fa-dragon"></i><br>Dragon
+              </button>
+
+              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="drk" onClick="atkDrk()">
+                <i class="fa-solid fa-moon"></i><br>Dark
+              </button>
+
+              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="steel" onClick="atkSteel()">
+                <i class="fa-solid fa-scissors"></i><br>Steel
+              </button>
+
+              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="fairy" onClick="atkFairy()">
+                <i class="fa-solid fa-sun"></i><br>Fairy
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>        
+
+      <div class="container-sm text-center">
+        <hr>
+        <p id="choice" class="mt-2 p-3 fs-3"></p>
+        <button class="btn btn-dark rounded-3 px-5 py-2" type="button" id="clear" onClick="hideAllTypes()"><i class="fa-solid fa-circle-xmark fa-lg"></i></button>
+      </div>
+      
+      <hr>
+
+      <div class="row row-cols row-cols-3 g-1">
+        <div class="col">
+            <div class="card">
+              <div class="card-header">
+                Strong Against:
+              </div>
+              <div class="card-body">
+                <div class="text-center">
+                    <div id="sNorm" class="stype norm">Normal</div>
+                    <div id="sFire" class="stype fire">Fire</div>
+                    <div id="sWater" class="stype water">Water</div>
+                    <div id="sGrass" class="stype grass">Grass</div>
+                    <div id="sElec" class="stype elec">Electric</div>
+                    <div id="sIce" class="stype ice">Ice</div>
+                    <div id="sFight" class="stype fight">Fighting</div>
+                    <div id="sPois" class="stype pois">Poison</div>
+                    <div id="sGrnd" class="stype grnd">Ground</div>
+                    <div id="sFly" class="stype fly">Flying</div>
+                    <div id="sPsych" class="stype psych">Psychic</div>
+                    <div id="sBug" class="stype bug">Bug</div>
+                    <div id="sRck" class="stype rock">Rock</div>
+                    <div id="sGhst" class="stype ghost">Ghost</div>
+                    <div id="sDrag" class="stype drag">Dragon</div>
+                    <div id="sDrk" class="stype drk">Dark</div>
+                    <div id="sSteel" class="stype steel">Steel</div>
+                    <div id="sFairy" class="stype fairy">Fairy</div>
+                  </div>
+              </div>
+              <div class="card-footer"> </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+              <div class="card-header">
+                Not as Effective Against:
+              </div>
+              <div class="card-body">
+                <div class="text-center">
+                    <div id="wNorm" class="wtype norm">Normal</div>
+                    <div id="wFire" class="wtype fire">Fire</div>
+                    <div id="wWater" class="wtype water">Water</div>
+                    <div id="wGrass" class="wtype grass">Grass</div>
+                    <div id="wElectric" class="wtype elec">Electric</div>
+                    <div id="wIce" class="wtype ice">Ice</div>
+                    <div id="wFight" class="wtype fight">Fighting</div>
+                    <div id="wPois" class="wtype pois">Poison</div>
+                    <div id="wGrnd" class="wtype grnd">Ground</div>
+                    <div id="wFly" class="wtype fly">Flying</div>
+                    <div id="wPsych" class="wtype psych">Psychic</div>
+                    <div id="wBug" class="wtype bug">Bug</div>
+                    <div id="wRck" class="wtype rock">Rock</div>
+                    <div id="wGhst" class="wtype ghost">Ghost</div>
+                    <div id="wDrag" class="wtype drag">Dragon</div>
+                    <div id="wDrk" class="wtype drk">Dark</div>
+                    <div id="wSteel" class="wtype steel">Steel</div>
+                    <div id="wFairy" class="wtype fairy">Fairy</div>
+                  </div>
+              </div>
+              <div class="card-footer"> </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+              <div class="card-header">
+                No Effect:
+              </div>
+              <div class="card-body">
+                <p class="noEffect"></p>
+              </div>
+              <div class="card-footer"> </div>
+            </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer class="footer">
+        <div class="container-sm">
+         <div class="row">
+          <div class="col text-start pb-3">
+            <p class="text-muted">2021 © Eleanor T.</p>
+            <p class="text-muted">Not affiliated with <em>Game Freak</em> or <em>The Pokemon Company</em>.<br>No profit or proceeds were made from the creation of this fan-made tool.</p>
+            <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Felykittytee.github.io%2Fprojects%2Fbattletool%2Fpoketype.html&count_bg=%236D6D6D&title_bg=%23A2A2A2&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
+          </div>
+        </div>
+      </footer>
+    </div>    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2dcb72dfc2.js" crossorigin="anonymous"></script>
+    <script src="poketype.js"></script>
+
+  </body>
+</html>

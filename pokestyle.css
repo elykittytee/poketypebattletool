@@ -1,0 +1,293 @@
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .cont {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .cont::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after,
+  .right::after {
+    left: 18px;
+  }
+
+  .right {
+    left: 0%;
+  }
+
+  iframe {
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+  }
+}
+
+#stuff {
+  background-color: White;
+}
+
+/* which version? */
+body#attacking{
+  background-color: DodgerBlue;
+}
+
+body#defending{
+  background-color: Crimson;
+}
+
+
+/* pokemon type choice*/
+
+#choice {
+  background-color: White;
+}
+
+/* chart sizes */
+
+.wtype, .stype, .noEffect {
+  border-width: 3px;
+  border-style:  solid;
+  border-radius: 2px;
+}
+
+/* chart heading */
+th{
+  background-color: Gainsboro;/*
+  width: 12em;
+  padding: 1em 0;
+
+  border-radius: 5px;*/
+}
+
+/* center the big table */
+table {
+  height: 2em;
+  margin: 1em auto;
+}
+
+
+/* pokemon chart type styles */
+.norm {
+  background-color: gainsboro;
+  border-color: Black;
+}
+
+.fire {
+  background-color: OrangeRed;
+  color: MistyRose;
+  border-color: Red;
+}
+
+.water {
+  background-color: LightSkyBlue;
+  color: Azure;
+  border-color: PowderBlue;
+}
+
+.grass {
+  background-color: ForestGreen;
+  color: HoneyDew;
+  border-color: DarkGreen;
+}
+
+.elec {
+  background-color: Gold;
+  color: Beige;
+  border-color: Chatreuse;
+}
+
+.ice {
+  background-color: AliceBlue;
+  color: Navy;
+  border-color: DeepSkyBlue;
+}
+
+.fight {
+  background-color: DarkRed;
+  color: White;
+  border-color: Crimson;
+}
+
+.pois {
+  background-color: Indigo;
+  color: Lavender;
+  border-color: BlueViolet;
+}
+
+.grnd {
+  background-color: DarkKhaki;
+  color: SaddleBrown;
+  border-color: Cornsilk;
+}
+
+.fly {
+  background-color: PaleTurquoise;
+  color: RoyalBlue;
+  border-color: LightBlue;
+}
+
+.psych {
+  background-color: Fuchsia;
+  color: GhostWhite;
+  border-color: Brown;
+}
+
+.bug {
+  background-color: Olive;
+  color: Ivory;
+  border-color: WhiteSmoke;
+}
+
+.rock {
+  background-color: Sienna;
+  color: OldLace;
+  border-color: Wheat;
+}
+
+.ghost {
+  background-color: MediumPurple;
+  color: Lavender;
+  border-color: Thistle;
+}
+
+.drag {
+  background-color: SteelBlue;
+  color: LightCyan;
+  border-color: LightSKyBlue;
+}
+
+.drk {
+  background-color: DimGray;
+  color: White;
+  border-color: DarkSlateGray;
+}
+
+.steel {
+  background-color: Silver;
+  color: Black;
+  border-color: Black;
+}
+
+.fairy {
+  background-color: HotPink;
+  color: LaenderBlush;
+  border-color: LightPink;
+}
+
+/* button styles */
+button#norm{
+  background-color: gainsboro;
+  border-color: Black;
+}
+
+button#fire {
+  background-color: OrangeRed;
+  color: MistyRose;
+  border-color: Red;
+}
+
+button#water {
+  background-color: LightSkyBlue;
+  color: Navy;
+  border-color: PowderBlue;
+}
+
+button#grass {
+  background-color: ForestGreen;
+  color: HoneyDew;
+  border-color: DarkGreen;
+}
+
+button#elec {
+  background-color: Gold;
+  color: Sienna;
+  border-color: Chatreuse;
+}
+
+button#ice {
+  background-color: AliceBlue;
+  color: Navy;
+  border-color: DeepSkyBlue;
+}
+
+button#fight {
+  background-color: DarkRed;
+  color: White;
+  border-color: Crimson;
+}
+
+button#pois {
+  background-color: Indigo;
+  color: Lavender;
+  border-color: BlueViolet;
+}
+
+button#grnd {
+  background-color: DarkKhaki;
+  color: SaddleBrown;
+  border-color: Cornsilk;
+}
+
+button#fly {
+  background-color: PaleTurquoise;
+  color: RoyalBlue;
+  border-color: LightBlue;
+}
+
+button#psych {
+  background-color: Fuchsia;
+  color: GhostWhite;
+  border-color: Brown;
+}
+
+button#bug {
+  background-color: Olive;
+  color: Ivory;
+  border-color: WhiteSmoke;
+}
+
+button#rck {
+  background-color: Sienna;
+  color: OldLace;
+  border-color: Wheat;
+}
+
+button#ghst {
+  background-color: MediumPurple;
+  color: Lavender;
+  border-color: Thistle;
+}
+
+button#drag {
+  background-color: SteelBlue;
+  color: LightCyan;
+  border-color: LightSKyBlue;
+}
+
+button#drk {
+  background-color: DimGray;
+  color: White;
+  border-color: DarkSlateGray;
+}
+
+button#steel {
+  background-color: Silver;
+  color: Black;
+  border-color: Black;
+}
+
+button#fairy {
+  background-color: HotPink;
+  color: LaenderBlush;
+  border-color: LightPink;
+}
