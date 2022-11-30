@@ -31,103 +31,71 @@
       </div>
       <hr>
       
-      <div class="container-sm text-center">
+
+      <div class="container text-center">
         <div class="row">
-          <div class="col">
-            <div class="btn-group" role="group" aria-label="poketype button outline">
+          <div class="col" id="norm" onClick="atkNorm()">
+            <i class="fa-solid fa-circle-dot"></i><br> Normal
+          </div>
+          <div class="col"  id="fire" onClick="atkFire()">
+            <i class="fa-solid fa-fire-flame-curved"></i><br>Fire
+          </div>
+          <div class="col" id="water" onClick="atkWater()">
+            <i class="fa-solid fa-droplet"></i><br>Water</div>
+          <div class="col" id="grass" onClick="atkGrass()">
+            <i class="fa-solid fa-leaf"></i><br>Grass</div>
+          <div class="col" id="elec" onClick="atkElec()">
+            <i class="fa-solid fa-bolt-lightning"></i><br>Electric</div>
+          <div class="col" id="ice" onClick="atkIce()">
+            <i class="fa-solid fa-snowflake"></i><br>Ice</div>
+        </div>
+      </div>
 
-              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="norm" onClick="atkNorm()">
-                <i class="fa-solid fa-circle-dot"></i><br> Normal
-              </button>
-              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="fire" onClick="atkFire()">
-                <i class="fa-solid fa-fire-flame-curved"></i><br>Fire
-              </button>
-
-              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="water" onClick="atkWater()">
-                <i class="fa-solid fa-droplet"></i><br>Water
-              </button>
-
-              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="grass" onClick="atkGrass()">
-                <i class="fa-solid fa-leaf"></i><br>Grass
-              </button>
-
-              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="elec" onClick="atkElec()">
-                <i class="fa-solid fa-bolt-lightning"></i><br>Electric
-              </button>
-
-              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="ice" onClick="atkIce()">
-                <i class="fa-solid fa-snowflake"></i><br>Ice
-              </button>
-            </div>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col" id="fight" onClick="atkFight()">
+            <i class="fa-solid fa-hand-back-fist"></i><br>Fighting
+          </div>
+          <div class="col" id="pois" onClick="atkPois()">
+            <i class="fa-solid fa-skull-crossbones"></i><br>Poison
+          </div>
+          <div class="col" id="grnd" onClick="atkGrnd()">
+            <i class="fa-solid fa-mountain"></i><br>Ground
+          </div>
+          <div class="col" id="fly" onClick="atkFly()">
+            <i class="fa-solid fa-feather-pointed"></i><br>Flying
+          </div>
+          <div class="col" id="psych" onClick="atkPsych()">
+            <i class="fa-solid fa-brain"></i><br>Psychic
+          </div>
+          <div class="col" id="bug" onClick="atkBug()">
+            <i class="fa-solid fa-bug"></i><br>Bug
           </div>
         </div>
       </div>
 
-      <div class="container-sm text-center">
+      <div class="container text-center">
         <div class="row">
-          <div class="col">
-            <div class="btn-group" role="group" aria-label="poketype button outline">
-
-              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="fight" onClick="atkFight()">
-                <i class="fa-solid fa-hand-back-fist"></i><br>Fighting
-              </button>
-              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="pois" onClick="atkPois()">
-                <i class="fa-solid fa-skull-crossbones"></i><br>Poison
-              </button>
-
-              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="grnd" onClick="atkGrnd()">
-                <i class="fa-solid fa-mountain"></i><br>Ground
-              </button>
-
-              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="fly" onClick="atkFly()">
-                <i class="fa-solid fa-feather-pointed"></i><br>Flying
-              </button>
-
-              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="psych" onClick="atkPsych()">
-                <i class="fa-solid fa-brain"></i><br>Psychic
-              </button>
-
-              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="bug" onClick="atkBug()">
-                <i class="fa-solid fa-bug"></i><br>Bug
-              </button>
-            
-            </div>
+          <div class="col" id="rck" onClick="atkRck()">
+            <i class="fa-solid fa-gem"></i><br>Rock
+          </div>
+          <div class="col" id="ghst" onClick="atkGhst()">
+            <i class="fa-solid fa-ghost"></i><br>Ghost
+          </div>
+          <div class="col" id="drag" onClick="atkDrag()">
+            <i class="fa-solid fa-dragon"></i><br>Dragon
+          </div>
+          <div class="col" id="drk" onClick="atkDrk()">
+            <i class="fa-solid fa-moon"></i><br>Dark
+          </div>
+          <div class="col" id="steel" onClick="atkSteel()">
+            <i class="fa-solid fa-scissors"></i><br>Steel
+          </div>
+          <div class="col" id="fairy" onClick="atkFairy()">
+            <i class="fa-solid fa-sun"></i><br>Fairy
           </div>
         </div>
-      </div>
-
-      <div class="container-sm text-center">
-        <div class="row">
-          <div class="col">
-            <div class="btn-group" role="group" aria-label="poketype button outline">
-
-              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="rck" onClick="atkRck()">
-                <i class="fa-solid fa-gem"></i><br>Rock
-              </button>
-              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="ghst" onClick="atkGhst()">
-                <i class="fa-solid fa-ghost"></i><br>Ghost
-              </button>
-
-              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="drag" onClick="atkDrag()">
-                <i class="fa-solid fa-dragon"></i><br>Dragon
-              </button>
-
-              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="drk" onClick="atkDrk()">
-                <i class="fa-solid fa-moon"></i><br>Dark
-              </button>
-
-              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="steel" onClick="atkSteel()">
-                <i class="fa-solid fa-scissors"></i><br>Steel
-              </button>
-
-              <button type="button" class="btn btn-outline-dark rounded-3 p-1"  id="fairy" onClick="atkFairy()">
-                <i class="fa-solid fa-sun"></i><br>Fairy
-              </button>
-
-            </div>
-          </div>
-        </div>
-      </div>                    
+      </div>                 
 
       <div class="container-sm text-center">
         <hr>

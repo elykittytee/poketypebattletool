@@ -187,108 +187,108 @@ table {
 }
 
 /* button styles */
-button#norm{
+div#norm{
   background-color: gainsboro;
   border-color: Black;
 }
 
-button#fire {
+div#fire {
   background-color: OrangeRed;
   color: MistyRose;
   border-color: Red;
 }
 
-button#water {
+div#water {
   background-color: LightSkyBlue;
   color: Navy;
   border-color: PowderBlue;
 }
 
-button#grass {
+div#grass {
   background-color: ForestGreen;
   color: HoneyDew;
   border-color: DarkGreen;
 }
 
-button#elec {
+div#elec {
   background-color: Gold;
   color: Sienna;
   border-color: Chatreuse;
 }
 
-button#ice {
+div#ice {
   background-color: AliceBlue;
   color: Navy;
   border-color: DeepSkyBlue;
 }
 
-button#fight {
+div#fight {
   background-color: DarkRed;
   color: White;
   border-color: Crimson;
 }
 
-button#pois {
+div#pois {
   background-color: Indigo;
   color: Lavender;
   border-color: BlueViolet;
 }
 
-button#grnd {
+div#grnd {
   background-color: DarkKhaki;
   color: SaddleBrown;
   border-color: Cornsilk;
 }
 
-button#fly {
+div#fly {
   background-color: PaleTurquoise;
   color: RoyalBlue;
   border-color: LightBlue;
 }
 
-button#psych {
+div#psych {
   background-color: Fuchsia;
   color: GhostWhite;
   border-color: Brown;
 }
 
-button#bug {
+div#bug {
   background-color: Olive;
   color: Ivory;
   border-color: WhiteSmoke;
 }
 
-button#rck {
+div#rck {
   background-color: Sienna;
   color: OldLace;
   border-color: Wheat;
 }
 
-button#ghst {
+div#ghst {
   background-color: MediumPurple;
   color: Lavender;
   border-color: Thistle;
 }
 
-button#drag {
+div#drag {
   background-color: SteelBlue;
   color: LightCyan;
   border-color: LightSKyBlue;
 }
 
-button#drk {
+div#drk {
   background-color: DimGray;
   color: White;
   border-color: DarkSlateGray;
 }
 
-button#steel {
+div#steel {
   background-color: Silver;
   color: Black;
   border-color: Black;
 }
 
-button#fairy {
+div#fairy {
   background-color: HotPink;
   color: LaenderBlush;
   border-color: LightPink;
