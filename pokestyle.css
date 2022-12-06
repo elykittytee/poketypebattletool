@@ -71,13 +71,6 @@ th{
   border-radius: 5px;*/
 }
 
-/* center the big table */
-table {
-  height: 2em;
-  margin: 1em auto;
-}
-
-
 /* pokemon chart type styles */
 .norm {
   background-color: gainsboro;
