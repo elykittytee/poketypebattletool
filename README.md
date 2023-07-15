@@ -10,7 +10,7 @@ No profit or proceeds were made from the creation of this fan-made tool.
 ## Improvements TBD
 * wth is up with the *bug* button on mobile
   * (idk what's going on with it. it looks fine on desktop)
-* Implement Tera-type Effectiveness
+* ~~Implement Tera-type Effectiveness~~ (redundant)
 * Cute(r) font
 * Make it cuter in general
-* Consolidate functions to 1 page
+* ~~Consolidate functions to 1 page~~
