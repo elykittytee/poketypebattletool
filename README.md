@@ -13,3 +13,4 @@ No profit or proceeds were made from the creation of this fan-made tool.
 * Implement Tera-type Effectiveness
 * Cute(r) font
 * Make it cuter in general
+* Consolidate functions to 1 page
