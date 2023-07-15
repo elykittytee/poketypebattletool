@@ -1,4 +1,199 @@
+var result=[]; //debugging id
+var isAtk=true;
+const pokeType=["norm","fire","water","grass","elec","ice","fight","pois","grnd","fly","psych","bug","rck","ghst","drag","drk","steel","fairy"]
+var attack = document.getElementById('atknav');
+var defence = document.getElementById('defnav');
+
 hideAllTypes();
+isAtk=true;
+attack.style.color = 'white';
+attack.style.background = 'red';
+
+defence.style.color = 'black';
+defence.style.background = 'white';
+// start
+
+function clicky(poke){
+
+  if (poke=="atknav"){ //sets atk/def
+    isAtk=true;
+    getType(poke);
+    attack.style.color = 'white';
+    attack.style.background = 'red';
+
+    defence.style.color = 'black';
+    defence.style.background = 'white';
+      
+  } else if (poke=="defnav"){ //sets atk/def
+    isAtk=false;
+    getType(poke);
+    attack.style.color = 'black';
+    attack.style.background = 'white';
+
+    defence.style.color = 'white';
+    defence.style.background = 'blue';
+
+  } else {
+    result=[];
+    getType(poke);
+  }
+
+  display();
+}
+
+function getType(clicky){
+  for (var i=0; i<=18; i+=1){
+    if (clicky==pokeType[i]){
+      result.push(pokeType[i]);
+    }       
+  }
+}
+
+function display(){ //if atk t-f
+  if (isAtk) {
+    if (result[0]=="norm"){
+      hideAllTypes()
+      atkNorm();
+    } else if (result[0]=="fire") {
+      hideAllTypes()
+      atkFire();
+    } else if (result[0]=="water") {
+      hideAllTypes()
+      atkWater();
+    } else if (result[0]=="grass") {
+      hideAllTypes()
+      atkGrass();
+    } else if (result[0]=="elec") {
+      hideAllTypes()
+      atkElec();
+    } else if (result[0]=="ice") {
+      hideAllTypes()
+      atkIce();
+    } else if (result[0]=="fight") {
+      hideAllTypes()
+      atkFight();
+    } else if (result[0]=="pois") {
+      hideAllTypes()
+      atkPois();
+    } else if (result[0]=="grnd") {
+      hideAllTypes()
+      atkGrnd();      
+    } else if (result[0]=="fly") {
+      hideAllTypes()
+      atkFly();
+    } else if (result[0]=="psych") {
+      hideAllTypes()
+      atkPsych();
+    } else if (result[0]=="bug") {
+      hideAllTypes()
+      atkBug();
+    } else if (result[0]=="rck") {
+      hideAllTypes()
+      atkRck();
+    } else if (result[0]=="ghst") {
+      hideAllTypes()
+      atkGhst();
+    } else if (result[0]=="drag") {
+      hideAllTypes()
+      atkDrag();
+    } else if (result[0]=="drk") {
+      hideAllTypes()
+      atkDrk();
+    } else if (result[0]=="steel") {
+      hideAllTypes()
+      atkSteel();
+    } else if (result[0]=="fairy") {
+      hideAllTypes()
+      atkFairy();
+    }
+  } else {
+    if (result[0]=="norm"){
+      hideAllTypes()
+      defNorm();
+    } else if (result[0]=="fire") {
+      hideAllTypes()
+      defFire();
+    } else if (result[0]=="water") {
+      hideAllTypes()
+      defWater();
+    } else if (result[0]=="grass") {
+      hideAllTypes()
+      defGrass();
+    } else if (result[0]=="elec") {
+      hideAllTypes()
+      defElec();
+    } else if (result[0]=="ice") {
+      hideAllTypes()
+      defIce();
+    } else if (result[0]=="fight") {
+      hideAllTypes()
+      defFight();
+    } else if (result[0]=="pois") {
+      hideAllTypes()
+      defPois();
+    } else if (result[0]=="grnd") {
+      hideAllTypes()
+      defGrnd();      
+    } else if (result[0]=="fly") {
+      hideAllTypes()
+      defFly();
+    } else if (result[0]=="psych") {
+      hideAllTypes()
+      defPsych();
+    } else if (result[0]=="bug") {
+      hideAllTypes()
+      defBug();
+    } else if (result[0]=="rck") {
+      hideAllTypes()
+      defRck();
+    } else if (result[0]=="ghst") {
+      hideAllTypes()
+      defGhst();
+    } else if (result[0]=="drag") {
+      hideAllTypes()
+      defDrag();
+    } else if (result[0]=="drk") {
+      hideAllTypes()
+      defDrk();
+    } else if (result[0]=="steel") {
+      hideAllTypes()
+      defSteel();
+    } else if (result[0]=="fairy") {
+      hideAllTypes()
+      defFairy();
+    }
+
+  }
+}
+
+//clear all
+function hideAllTypes(){
+  //clear choice
+  var choice = document.getElementById('choice');
+  choice.textContent = " ";
+  choice.style.background = 'White';
+
+  //clear noeffect column
+  var noEffect = document.getElementsByClassName("noEffect"); 
+  //returns an array
+  for (var i=0;i<noEffect.length;i+=1){
+    noEffect[i].style.display = 'none';
+  }
+
+  //clear strong column
+  var strong = document.getElementsByClassName("stype"); 
+  //returns an array
+  for (var i=0;i<strong.length;i+=1){
+    strong[i].style.display = 'none';
+  }
+
+  //clear weak column
+  var weak = document.getElementsByClassName("wtype");
+  //returns an array
+  for (var i=0;i<weak.length;i+=1){
+    weak[i].style.display = 'none';
+  }
+}
 
 //attacking
 
@@ -1307,33 +1502,3 @@ function defFairy() {
 }
 
 
-//clear all
-function hideAllTypes(){
-  
-  //clear choice
-  var choice = document.getElementById('choice');
-  choice.textContent = " ";
-  choice.style.background = 'White';
-
-  //clear noeffect column
-  var noEffect = document.getElementsByClassName("noEffect"); 
-  //returns an array
-  for (var i=0;i<noEffect.length;i+=1){
-    noEffect[i].style.display = 'none';
-  }
-
-  //clear strong column
-  var strong = document.getElementsByClassName("stype"); 
-  //returns an array
-  for (var i=0;i<strong.length;i+=1){
-    strong[i].style.display = 'none';
-  }
-
-  //clear weak column
-  var weak = document.getElementsByClassName("wtype");
-  //returns an array
-  for (var i=0;i<weak.length;i+=1){
-    weak[i].style.display = 'none';
-  }
-
-}
