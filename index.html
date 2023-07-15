@@ -12,65 +12,73 @@
 
     <title>Poke-Type Battle Tool</title>
   </head>
+  <div id="result"></div>
   <body id="attacking">
     <div id="stuff" class="container-md mt-5">
       <div class="container-sm text-left px-1">
         <h1 class="pt-3">PokeType Battle Tool</h1>
         <hr>
-        <!-- <p><a href="defendtype.html">Go here</a> to choose the <strong class="text-danger">defending</strong> type instead</p>-->
-        <ul class="nav nav-pills nav-justified">
-            <li id="attacknav"  class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Attacking</a> <!-- active -->
-            </li>
-            <li id="defnav"  class="nav-item">
-                <a class="nav-link" href="defendtype.html">Defending</a>
-            </li>
-        </ul>
+
+
+        <div class="container text-center">
+          <div class="row">
+            <div class="col" id="atknav" onClick="clicky(this.id)">
+
+             Attacking
+
+            </div>
+            <div class="col" id="defnav" onClick="clicky(this.id)">
+
+            Defending
+            
+            </div>
+          </div>
+        </div>
+
         <hr>
-        <h3 class="text-center my-2">Choose the ATTACKING Type</h3>
+
+        <h3 class="text-center my-2">Choose the Type</h3>
          <hr>
       </div>
      
       
-      
-
       <div class="container text-center">
         <div class="row">
-          <div class="col" id="norm" onClick="atkNorm()">
+          <div class="col" id="norm" onClick="clicky(this.id)">
             <i class="fa-solid fa-circle-dot"></i><br> Normal
           </div>
-          <div class="col"  id="fire" onClick="atkFire()">
+          <div class="col"  id="fire" onClick="clicky(this.id)">
             <i class="fa-solid fa-fire-flame-curved"></i><br>Fire
           </div>
-          <div class="col" id="water" onClick="atkWater()">
+          <div class="col" id="water" onClick="clicky(this.id)">
             <i class="fa-solid fa-droplet"></i><br>Water</div>
-          <div class="col" id="grass" onClick="atkGrass()">
+          <div class="col" id="grass" onClick="clicky(this.id)">
             <i class="fa-solid fa-leaf"></i><br>Grass</div>
-          <div class="col" id="elec" onClick="atkElec()">
+          <div class="col" id="elec" onClick="clicky(this.id)">
             <i class="fa-solid fa-bolt-lightning"></i><br>Electric</div>
-          <div class="col" id="ice" onClick="atkIce()">
+          <div class="col" id="ice" onClick="clicky(this.id)">
             <i class="fa-solid fa-snowflake"></i><br>Ice</div>
         </div>
       </div>
 
       <div class="container text-center">
         <div class="row">
-          <div class="col" id="fight" onClick="atkFight()">
+          <div class="col" id="fight" onClick="clicky(this.id)">
             <i class="fa-solid fa-hand-back-fist"></i><br>Fighting
           </div>
-          <div class="col" id="pois" onClick="atkPois()">
+          <div class="col" id="pois" onClick="clicky(this.id)">
             <i class="fa-solid fa-skull-crossbones"></i><br>Poison
           </div>
-          <div class="col" id="grnd" onClick="atkGrnd()">
+          <div class="col" id="grnd" onClick="clicky(this.id)">
             <i class="fa-solid fa-mountain"></i><br>Ground
           </div>
-          <div class="col" id="fly" onClick="atkFly()">
+          <div class="col" id="fly" onClick="clicky(this.id)">
             <i class="fa-solid fa-feather-pointed"></i><br>Flying
           </div>
-          <div class="col" id="psych" onClick="atkPsych()">
+          <div class="col" id="psych" onClick="clicky(this.id)">
             <i class="fa-solid fa-brain"></i><br>Psychic
           </div>
-          <div class="col" id="bug" onClick="atkBug()">
+          <div class="col" id="bug" onClick="clicky(this.id)">
             <i class="fa-solid fa-bug"></i><br>Bug
           </div>
         </div>
@@ -78,28 +86,28 @@
 
       <div class="container text-center">
         <div class="row">
-          <div class="col" id="rck" onClick="atkRck()">
+          <div class="col" id="rck" onClick="clicky(this.id)">
             <i class="fa-solid fa-gem"></i><br>Rock
           </div>
-          <div class="col" id="ghst" onClick="atkGhst()">
+          <div class="col" id="ghst" onClick="clicky(this.id)">
             <i class="fa-solid fa-ghost"></i><br>Ghost
           </div>
-          <div class="col" id="drag" onClick="atkDrag()">
+          <div class="col" id="drag" onClick="clicky(this.id)">
             <i class="fa-solid fa-dragon"></i><br>Dragon
           </div>
-          <div class="col" id="drk" onClick="atkDrk()">
+          <div class="col" id="drk" onClick="clicky(this.id)">
             <i class="fa-solid fa-moon"></i><br>Dark
           </div>
-          <div class="col" id="steel" onClick="atkSteel()">
+          <div class="col" id="steel" onClick="clicky(this.id)">
             <i class="fa-solid fa-scissors"></i><br>Steel
           </div>
-          <div class="col" id="fairy" onClick="atkFairy()">
+          <div class="col" id="fairy" onClick="clicky(this.id)">
             <i class="fa-solid fa-sun"></i><br>Fairy
           </div>
         </div>
       </div>
-
       <div class="container-sm text-center">
+
         <hr>
         <p id="choice" class="mt-2 p-3 fs-3"></p>
         <button class="btn btn-dark rounded-3 px-5 py-2" type="button" id="clear" onClick="hideAllTypes()"><i class="fa-solid fa-circle-xmark fa-lg"></i></button>
