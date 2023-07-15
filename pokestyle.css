@@ -36,17 +36,14 @@
   background-color: White;
 }
 
-/* which version? */
-body#attacking{
-  background-color: DodgerBlue;
+body{
+  background-color: gainsboro;
 }
 
-body#defending{
-  background-color: Crimson;
+/* which version? */
+#atknav, #defnav{
+  padding:20,0;
 }
-li#attacknav a {color: red}
-li#defnav a{color: blue}
-li#attacknav a.active, li#defnav a.active  {color:white; border-bottom-color: transparent;background-color:darkgray; }
 
 /* pokemon type choice*/
 
