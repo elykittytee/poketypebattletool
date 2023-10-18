@@ -1,8 +1,9 @@
 # Poke-Type Battle Tool
 
 ## Overview
-The purpose of this tool is to provide a web-based visual to assist players in pokemon battles with information about type effectiveness. 
-My memory sucks, so I made this to help me.
+The purpose of this tool is to provide a web-based quick reference visual to assist players in pokemon battles with information about type effectiveness. 
+
+**tl;dr** My memory sucks, so I made this to help me.
 
 ## Disclaimer
 I am not affiliated with *Game Freak* or *TPCI*.
